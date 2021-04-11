@@ -16,12 +16,9 @@ def animate(i):
     while True:
         data=ser.readline()
         data=str(data.decode())
-        p=data.split()
-        a=p[0]
-        a=float(a)
-        b=p[1]
+        a=float(data)
         ct = dt.datetime.now()
-        print(ct,a,b)
+        print(ct,a)
         i=i+1
         x.append(i)
         y.append(a)
