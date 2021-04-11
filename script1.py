@@ -20,16 +20,12 @@ def animate(i):
         a=p[0]
         a=float(a)
         b=p[1]
-        #c=a+b
         ct = dt.datetime.now()
-        #data=int(data)
-        #print(type(data))
-        print(ct,a)
+        print(ct,a,b)
         i=i+1
-        #print(i)
         x.append(i)
         y.append(a)
-        #line, = plt.plot(x,y)
-        #return line,
+        line, = plt.plot(x,y)
+        return line,
 ani = animation.FuncAnimation(fig,animate, interval=1)
 plt.show()
