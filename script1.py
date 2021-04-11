@@ -2,7 +2,6 @@ import serial
 import matplotlib.pyplot as plt
 import numpy as np
 import time
-from scipy.fft import fft
 import matplotlib.animation as animation
 import datetime as dt
 fig = plt.figure()
